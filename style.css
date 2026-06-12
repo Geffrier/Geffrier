@@ -155,3 +155,13 @@ footer{
   }
 
 }
+.oman-hero{
+  min-height:100vh;
+  background:url("villa.png.PNG") center center/cover no-repeat;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
