@@ -1,7 +1,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Arial,sans-serif;background:#f8f5ef;color:#1d1d1b}
 a{text-decoration:none;color:inherit}
-header{min-height:100vh;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80");background-size:cover;background-position:center;color:white;padding:36px;display:flex;flex-direction:column}
+header{min-height:100vh;background:url("Page d'accueil .PNG") center center/cover no-repeat;}
 nav{text-align:center}
 .logo{font-size:32px;letter-spacing:12px;font-weight:bold;margin-bottom:28px}
 .menu{display:flex;justify-content:center;gap:36px;font-size:18px}
