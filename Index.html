@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geffrier — Hôtel & Resort</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f5ef;
+      color: #1d1d1b;
+    }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.45)),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 25px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      letter-spacing: 4px;
+      font-size: 22px;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    .hero h2 {
+      font-size: 52px;
+      max-width: 700px;
+      margin: 0 0 20px;
+      font-weight: 400;
+    }
+
+    .hero p {
+      max-width: 520px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 28px;
+      border: 1px solid white;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+
+    section {
+      padding: 80px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .intro {
+      text-align: center;
+    }
+
+    .intro h2,
+    .destinations h2,
+    .rooms h2,
+    .booking h2 {
+      font-size: 38px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .intro p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 4px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+
+    .card p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .booking {
+      text-align: center;
+      background: #1d1d1b;
+      color: white;
+      max-width: none;
+    }
+
+    .booking p {
+      color: #ddd;
+    }
+
+    footer {
+      padding: 40px;
+      text-align: center;
+      background: #111;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        padding: 20px;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .hero h2 {
+        font-size: 38px;
+      }
+
+      header {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <h1>Geffrier</h1>
+      <div>
+        <a href="#destinations">Destinations</a>
+        <a href="#chambres">Chambres</a>
+        <a href="#reservation">Réserver</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <h2>Hôtel & Resort de collection</h2>
+      <p>
+        Geffrier imagine des lieux d’exception pour voyageurs en quête
+        de calme, d’élégance et de destinations encore préservées.
+      </p>
+      <a href="#reservation" class="btn">Réserver</a>
+    </div>
+  </header>
+
+  <section class="intro">
+    <h2>Bienvenue chez Geffrier</h2>
+    <p>
+      Plus qu’un hôtel, Geffrier est une expérience. Chaque adresse est pensée
+      comme une maison unique, entre luxe discret, service personnalisé et
+      immersion dans le territoire.
+    </p>
+  </section>
+
+  <section class="destinations" id="destinations">
+    <h2>Nos destinations</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Albanie</h3>
+        <p>Riviera ionienne, falaises dorées et mer turquoise.</p>
+      </div>
+
+      <div class="card">
+        <h3>Oman</h3>
+        <p>Désert, montagnes minérales et hospitalité orientale.</p>
+      </div>
+
+      <div class="card">
+        <h3>Açores</h3>
+        <p>Volcans, océan Atlantique et nature spectaculaire.</p>
+      </div>
+
+      <div class="card">
+        <h3>Géorgie</h3>
+        <p>Vignobles, Caucase et traditions ancestrales.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="rooms" id="chambres">
+    <h2>Chambres & Suites</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Suite Signature</h3>
+        <p>Vue panoramique, terrasse privée et service personnalisé.</p>
+      </div>
+
+      <div class="card">
+        <h3>Pavillon Royal</h3>
+        <p>Villa indépendante avec piscine privée et majordome.</p>
+      </div>
+
+      <div class="card">
+        <h3>Suite Nature</h3>
+        <p>Architecture douce, matériaux nobles et atmosphère apaisante.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking" id="reservation">
+    <h2>Commencer votre séjour</h2>
+    <p>Pour toute demande de réservation :</p>
+    <p><strong>contact@geffrier.com</strong></p>
+  </section>
+
+  <footer>
+    © 2026 Geffrier — Hôtel & Resort. Tous droits réservés.
+  </footer>
+
+</body>
+</html>
